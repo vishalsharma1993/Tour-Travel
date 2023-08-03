@@ -90,7 +90,7 @@
                         <li class="subnav__item"><a href="" class="subnav__link">COntact 2</a></li>
                     </ul>
                 </li> -->
-                <li class="navbar__item"><a href="" class="pri-btn navbar__btn navbar__link">BOOK NOW</a></li>
+                <li class="navbar__item"><a (click)="openDialog(Tour)" class="pri-btn navbar__btn navbar__link">BOOK NOW</a></li>
             </ul>
         </div>
         <!-- <div class="header__right">
@@ -264,7 +264,7 @@
     <!-- HOLIDAY -->
     <article class="theme__holiday">
         <div class="bg">
-                <h3 class="holiday__title">Are you Planing for Char Dham Yatra ?</h3>
+                <h3 class="holiday__title">Are you planning for a trip?</h3>
                 <p class="holiday__text">All kind of Taxies Ac & Non AC Available All India
                 </p>
                 <!-- <div class="holiday__search flex-box">
@@ -275,9 +275,9 @@
         
         <div class="holiday__choose-wrap flex-box">
             <div class="holiday__choose-item">
-                <a href="">
+                <a href="#gang">
                     <img src="https://leloc90.github.io/loveTravel/assets/images/t-relax.png" alt="">
-                    <span>Gangotri</span>
+                    <span >Gangotri</span>
                 </a>
             </div>
             <div class="holiday__choose-item">
@@ -459,7 +459,7 @@
                     </div>
         <div class="tours__item">
             <img src="https://leloc90.github.io/loveTravel/assets/images/icon-around.png" alt="">
-            <div class="tours__info">
+            <div class="tours__info" id="gang">
                 <h5>Gangotri</h5>
                 <p>Dedicated to Goddess Ganga, Gangothri Dham is the second of the four temples at the Chota Char Dham Route. Gangothri Dham is the birthplace of the River Ganga.</p>
                 <!-- <a href="">View more</a> -->
@@ -601,7 +601,7 @@
 
 <!-- FOOTER -->
 
-<footer>
+<!-- <footer>
     <section class="footer__container">
 
         <article class="footer__head">
@@ -719,4 +719,43 @@
         </div>
 
     </section>
+</footer> -->
+
+<!--FONT AWESOME-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!--FOOTER-->
+<footer>
+    <div class="top_header">
+        <section>
+            <span><i class="fa fa-map-marker"></i></span>
+            <span>Street, full address, state/province, country, pincode</span>
+        </section>
+        <section>
+            <span><i class="fa fa-phone"></i></span>
+            <span>(00) 0000 0000</span>
+        </section>
+        <section>
+            <span><i class="fa fa-envelope"></i></span>
+            <span>info@websitename.com</span>
+        </section>
+    </div>
+    <span class="border-shape"></span>
+    <div class="bottom_content">
+        <section>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-telegram"></i></a>
+        </section>
+        
+    </div>
+    <div class="copyright">
+        Copyright © 2021 Tour And Travel - All rights reserved
+    </div>
 </footer>
+
+<ng-template #Tour>
+    <p>hii</p>
+</ng-template>
