@@ -742,7 +742,7 @@ h2{
 
 /* TOURS */
 .tours__container {
-    width: 80%;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -901,8 +901,7 @@ h2{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-}
+    margin-top: 30px;}
 
 .tours__item {
     width: 30%;
@@ -2041,6 +2040,18 @@ font-size:12px;
 margin:0 5px;
 display:inline-block;
 }
+}
+
+// MAT CARD 
+.example-card {
+max-width: 289px;
+    border-radius: 60px}
+
+
+.mat-mdc-card-header {
+    display: flex;
+    padding: 16px 16px 0;
+    background-color: #e7e7e7;
 }
 
 
