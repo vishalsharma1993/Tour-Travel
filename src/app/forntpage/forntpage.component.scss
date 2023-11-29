@@ -154,13 +154,168 @@ h2{
 
 /* END NEXT HOLIDAY */
 
+/* TOURS */
+.tours__container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tours__beaches {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.beaches__info {
+    width: 32%;
+    padding: 12px;
+    align-self: flex-start;
+}
+
+.beaches__desc {
+    font-size: 14px;
+    color: var(--primary-text-color);
+    margin: 16px 0;
+    line-height: 1.8;
+    letter-spacing: 1px;
+}
+
+.beaches__price {
+    margin-top: 24px;
+}
+
+.beaches__old-price {
+    font-size: 30px;
+    color: #dadada;
+    text-decoration: line-through;
+    margin-right: 12px;
+}
+
+.beaches__new-price {
+    font-size: 30px;
+    color: var(--primary-text-color-2);
+}
+
+.beaches__price-person {
+    font-size: 14px;
+    color: var(--primary-text-color-2);
+}
+
+.beaches__btn {
+    background-color: #1bbc9b;
+    text-decoration: none;
+    padding: 6px 22px 4px;
+    font-size: 14px;
+    margin-top: 24px;
+}
+
+/* Beach wrap */
+.beaches__wrap {
+    width: 65%;
+    padding: 12px;
+    position: relative;
+}
+
+.beaches__bullets {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.beaches__bullets-item {
+    display: inline-block;
+    width: 60px;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    z-index: 2;
+    margin: 0 4px;
+}
+
+.beaches__bullets-item:hover {
+    background-color: #fff;
+}
+
+.beaches__img-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: unset;
+}
+
+.beaches__img-container::-webkit-scrollbar {
+    display: none;
+}
+
+.beaches__img-main {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+}
+
+.beaches__img-1 {
+    background: no-repeat center / cover url(https://leloc90.github.io/loveTravel/assets/images/parallax-4.jpg);
+}
+
+.beaches__img-2 {
+    background: no-repeat center / cover url(https://leloc90.github.io/loveTravel/assets/images/parallax-4-1.jpg);
+}
+
+.beaches__img-3 {
+    background: no-repeat center / cover url(https://leloc90.github.io/loveTravel/assets/images/package-3.jpg);
+}
+
+.beaches__wrap-time {
+    background-color: #14b9d5;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 36%);
+}
+
+.time__block {
+    width: 120px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.time__block:not(:first-child)::after {
+    content: "";
+    display: block;
+    background-color: rgba(0, 0, 0, 0.08);
+    position: absolute;
+    left: 0;
+    width: 3px;
+    height: 64%;
+    transform: rotate(12deg);
+}
+
+.time__number {
+    font-size: 32px;
+}
+
+.time__text {
+    font-size: 13px;
+}
+
 /* Tour list */
 .tours__list {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-}
+    margin-top: 30px;}
 
 .tours__item {
     width: 30%;
@@ -989,6 +1144,18 @@ font-size:12px;
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+// MAT CARD 
+.example-card {
+max-width: 289px;
+    border-radius: 60px}
+
+
+.mat-mdc-card-header {
+    display: flex;
+    padding: 16px 16px 0;
+    background-color: #e7e7e7;
 }
 
 

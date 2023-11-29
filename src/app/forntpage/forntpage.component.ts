@@ -7,6 +7,7 @@ import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
   styleUrls: ['./forntpage.component.scss']
 })
 export class ForntpageComponent {
+  status: boolean = false;
 
 constructor(private dialog: MatDialog){}
 
@@ -19,5 +20,8 @@ constructor(private dialog: MatDialog){}
     this.dialog.open(templateRef, dialogConfig);
   
   }
-
+clickEvent()
+  {
+      this.status = !this.status;       
+  }
 }
